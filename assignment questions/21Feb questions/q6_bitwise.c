@@ -18,7 +18,7 @@ int main()
 	printf("~a = %d\n", a = ~a);
 
 	// The result is 00010010
-	printf("b<<1 = %d\n", b << 1);
+	printf("b<<1 = %d\n", b << 2);
 
 	// The result is 00000100
 	printf("b>>1 = %d\n", b >> 1);
