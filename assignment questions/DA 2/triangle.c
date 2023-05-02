@@ -109,3 +109,37 @@ Obtuse Angled Triangle: 2
 
 Wrong Entries: 1
 */
+
+#include <stdio.h>
+
+int main() {
+   
+    int a,b,c;
+    for(int i=0;i<5;i++){
+    printf("Enter the angles of the traingle\n");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    int sum=a+b+c;
+    int acute=0,right=0,obtuse=0;
+    if(sum!=180){
+        printf("Wrong input\n");
+    }
+    else{
+        if(a<90 &&b<90 &&c<90){
+            acute+=1;
+        }
+        else if(a==90 && b==90 &c==9){
+            right+=1;
+        }
+        else{
+            obtuse+=1;
+        }
+    }
+
+    }
+    printf("No. of acute angles triangle= %d",acute);
+    printf("No. of right angles triangle= %d",right);
+    printf("No. of obtuse angles triangle= %d",obtuse);
+    return 0;
+}
